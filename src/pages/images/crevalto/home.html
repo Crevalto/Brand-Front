@@ -1,0 +1,99 @@
+<html>
+ <head>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans+Condensed:wght@300;700&family=Righteous&display=swap" rel="stylesheet">
+   <style>
+     body
+     {
+       padding:0px;
+       margin:0px;
+     }
+      video{
+          min-height: 100%;
+          min-width: 100%;
+          position: fixed;
+          z-index:1000;
+      }
+      .row{
+        color:white;
+        z-index:1001;
+        position:relative;
+        padding:0px;
+        margin: 0px;
+        min-height: 100%;
+        text-align: center;
+      }
+      img
+      {
+        width:150px;
+        border:3px solid white;
+        padding:10px;
+        border-radius:100px;
+      }
+      .card
+      {
+        z-index: 1002;
+        position: fixed;
+        width:100%;
+        background: #63278066;
+      }
+      #pulled
+      {
+        bottom:-150px;
+        transition: all .5s linear;
+      }
+      .card h1{
+        font-family: 'Righteous', cursive;
+        font-size: 60px;
+      }
+      .btn-danger
+      {
+        background: none;
+        border:3px solid white;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: all .3s ease-out;
+        margin-bottom: 20px;
+      }
+      .btn-danger:hover{
+        background: none;
+        border-color: #63278096;
+        transition: all .3s linear;
+      }
+      .btn-danger:active,.btn-danger:focus{
+        transition: all .3s ease-out;
+        border-color: #63278096 !important;
+        background: none !important;
+        box-shadow: none !important;
+      }
+   </style>
+   <script>
+    function pull()
+    {
+      console.log("hovered");
+      document.getElementById("pulled").style.bottom="0px";
+    }
+    function push()
+    {
+      console.log("hovered");
+      document.getElementById("pulled").style.bottom="-150px";
+    }
+   </script>
+ </head>
+ <body>
+   <video autoplay muted loop id="myVideo">
+    <source src="https://shotstack-api-stage-output.s3-ap-southeast-2.amazonaws.com/c0ru1ymfya/a3d0e1f9-4965-46c4-ac32-c966175c4777.mp4" type="video/mp4">
+  </video>
+  <div class="row">
+    <div class="card" onmouseover="pull()" onmouseleave="push()" id="pulled">
+      <!--<img src="imgs/logo/no_cre.png"/>-->
+      <br>
+      <h1>EXTEND YOUR ARMS TO THE NEED</h1>
+      <br>
+      <button  type="button" class="btn btn-danger">Join the movement <span class="glyphicon glyphicon-forward" style="margin-left:10px;" aria-hidden="true"></span></button>
+    </div>
+  </div>
+ </body>
+</html>

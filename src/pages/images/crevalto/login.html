@@ -1,0 +1,123 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+ <style media="screen">
+  body{
+    text-align: center;
+    background: rgba(99, 39, 128, 0.21);
+    background-attachment:fixed;
+  }
+  .card
+  {
+    background:white;
+    padding:50px;
+    margin:50px auto;
+    border-top:10px solid #632780;
+    width:75%;
+  }
+  .card h2
+  {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    color:#602781;
+  }
+  .row{
+    margin:0px !important;
+  }
+  .card img
+  {
+    width:150px;
+    border-radius:100px;
+    padding:10px;
+    border:2px solid #632780;
+  }
+  form
+  {
+    padding:10px 10px 20px 10px;
+  }
+  .form-control
+  {
+    margin-top:30px !important;
+    margin-bottom: 40px;
+  }
+  .btn-primary{
+    background: transparent;
+    border:3px solid purple;
+    color:#602781;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: all .2s linear;
+    text-transform: uppercase;
+  }
+  .btn-primary:hover
+  {
+    background-color: #602781;
+    color:white;
+    border-color: #602781;
+    transition: all .3s ease-out;
+  }
+  input{
+    border:none !important;
+    border-bottom: 3px solid #6027814d !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    color:#602781 !important;
+    font-size: 18px !important;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:700;
+    letter-spacing: 2px;
+  }
+  input:focus
+  {
+    border-bottom: 3px solid #602781 !important;
+  }
+  ::placeholder {
+  color: #6027814d !important;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  opacity: 1;
+  letter-spacing: 1px;
+}
+input:focus>::placeholder
+{
+  color:#602781 !important;
+}
+</style>
+  </head>
+ <body>
+   <div class='row'>
+       <div class="col-md-3"></div>
+       <div class="col-md-6">
+         <div class="card">
+             <img src="imgs/logo/purple_bg_noname.jpg"/>
+             <div class="row inner-option">
+               <div class="col-md-3"></div>
+               <div class="col-md-6">
+                 <h2>LOG-IN</h2>
+               </div>
+               <div class="col-md-3">
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-12">
+               <form>
+                 <div class="form-group">
+                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+                 </div>
+                 <div class="form-group">
+                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                 </div>
+                 <button type="submit" class="btn btn-primary">Submit</button>
+               </form>
+             </div>
+             </div>
+         </div>
+       </div>
+     <div class="col-md-3"></div>
+   </div>
+ </body>
+</html>
